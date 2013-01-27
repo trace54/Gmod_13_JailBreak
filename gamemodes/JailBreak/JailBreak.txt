@@ -1,23 +1,26 @@
 "Gamemode"
 {
-	"title"		"JailBreak"
-	"version"	"Gmod13, Pre-Alpha 0.1"
+    "base" "base"
+    "title" "JailBreak"
+	"version" "Pre-Alpha 0.1.2.1"
 
-	"author_name"	"Excl (_NewBee)"
-	"author_email"	""
-	"author_url"	"facepunch (_NewBee)"
+	"author_name" "Excl (_NewBee), and Dave"
+	"author_email" ""
+	"author_url" "facepunch (_NewBee)"
 	
-	"icon"		""
-	"info"		""
-	"hide"		""
-
-	
-	"mappattern"
+	"description" "Fixed by Dave and Excl with help from community"
+	"selectable"	"1"
+    "menusystem" "1"
+	"settings"
 	{
+	}
+	
+	"maps"
+{
 		"1"	"^pb_"
 		"2"	"^jb_"
 		"3"	"^ba_jail_"
 		"4"	"^ba_prison_"
 		"5"	"^rp_jail_"
-	}
+}
 }
