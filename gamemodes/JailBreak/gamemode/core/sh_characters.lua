@@ -113,7 +113,7 @@ if SERVER then
 		end
 		umsg.Short(c);
 		umsg.End();
-
+       end
 elseif CLIENT then
 	usermessage.Hook("JBSYC",function(um)
 		local p = LocalPlayer();
