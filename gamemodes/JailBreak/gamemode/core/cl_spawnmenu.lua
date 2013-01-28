@@ -276,7 +276,7 @@ surface.CreateFont( "JailBreakTitleFontSmallest", {
 	size        = 40,
 	weight      = 400,
 	antialias   = true,
-} ) )
+} ) 
 surface.CreateFont( "JailbreakMenuThingMainButton", {
 	font        = "Sports Jersey",
 	size        = 100,
