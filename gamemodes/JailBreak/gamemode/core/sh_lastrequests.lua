@@ -29,14 +29,14 @@ function JB:LastRequest()
 end
 
 function meta:AddPlayers(p,g)
-	if not ValidEntity(p) or not ValidEntity(g) then return end
+	if not IsValid(p) or not IsValid(g) then return end
 
 	self.prisoner = p;
 	self.guard = g;
 end
 
 function meta.__call(self)
-	if not ValidEntity(self.prisoner) or not ValidEntity(self.guard) then JB:DebugPrint("LR could not start: No players.") return end
+	if not IsValid(self.prisoner) or not IsValid(self.guard) then JB:DebugPrint("LR could not start: No players.") return end
 
 	JB:DebugPrint("LR Started")
 

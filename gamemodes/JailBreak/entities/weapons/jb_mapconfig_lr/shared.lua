@@ -147,7 +147,7 @@ end
 
 function SWEP:Think()
 	if CLIENT then
-		if not self.CMdl or not ValidEntity(self.CMdl) then
+		if not self.CMdl or not IsValid(self.CMdl) then
     		self.CMdl = ClientsideModel("models/props_junk/PopCan01a.mdl");
    	 	end
 

@@ -31,7 +31,7 @@ hook.Add("KeyPress" ,"CrouchMovementKeyPRess" ,function(p,k)
 end)]]
 function JB:PlayerSpawn(p)
 	p:ConCommand("fov_desired 90")
-	p:SetFOV(90);
+	player:SetFOV(90);
 	p.Crouch = false;
 	if (p:Team() < 3) then
 		p:GodDisable();

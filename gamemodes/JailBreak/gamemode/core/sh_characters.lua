@@ -1,6 +1,4 @@
-
 -- sh_characters
-
 JB.Characters = {Guard = {}, Prisoner = {}};
 
 local translationTbl = {};
@@ -115,7 +113,7 @@ if SERVER then
 		end
 		umsg.Short(c);
 		umsg.End();
-	end
+
 elseif CLIENT then
 	usermessage.Hook("JBSYC",function(um)
 		local p = LocalPlayer();

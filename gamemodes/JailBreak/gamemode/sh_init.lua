@@ -1,10 +1,8 @@
--- Code is ripped from PrisonBreak2, a gamemode by NewBee
-
 JB = GM; -- rather than calling gmod.GetGamemode() 100 times;
 
 JB.Name = "JailBreak";
 JB.Author = "_NewBee (Excl), Clark (Aide)";
-JB.Version = "ALPHA 1";
+JB.Version = "ALPHA 0.1.2.1";
 JB.util = {}
 JB.debug = true;
 

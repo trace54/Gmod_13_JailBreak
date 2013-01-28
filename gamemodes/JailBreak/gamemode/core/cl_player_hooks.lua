@@ -125,7 +125,7 @@ function JB:CalcView(p, pos, angles, fov) --Calculates the view, for run-view, m
 	view.origin = pos
 	view.fov = fov
 	
-	if ( ValidEntity( p:GetActiveWeapon() ) ) then --For weapons in run-mode (code from PrisonBreak2, by _NewBee (Excl))
+	if (IsValid( p:GetActiveWeapon() ) ) then --For weapons in run-mode (code from PrisonBreak2, by _NewBee (Excl))
 		
 		local func = p:GetActiveWeapon().GetViewModelPosition
 		if ( func ) then

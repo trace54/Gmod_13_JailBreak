@@ -125,7 +125,7 @@ function SWEP:Reload()
 				
 	self:SetNextPrimaryFire(CurTime()+dur);
 	timer.Create(self.Owner:SteamID().."ReloadTimer", dur,1,function(self)
-		if not self.Owner or not ValidEntity(self.Owner) or not self.Owner.GetAmmoCount then return end
+		if not self.Owner or not IsValid(self.Owner )) or not self.Owner.GetAmmoCount then return end
 		local clip = self:Clip1();
 		local a;
 		if self.Owner:GetAmmoCount(self.Ammo) < self.Primary.ClipSize then

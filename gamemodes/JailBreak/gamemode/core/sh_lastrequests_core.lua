@@ -177,7 +177,7 @@ addLR("Russian roulette","One gun, one bullet, spin the chamber and take a shot.
 })
 if SERVER then
 hook.Add("KeyRelease","RUssianKeyPressJB",function(p,k)
-	if k == IN_USE and activeLR and activeLR.Name == "Russian roulette" and RRGun and ValidEntity(RRGun) then
+	if k == IN_USE and activeLR and activeLR.Name == "Russian roulette" and RRGun and IsValid(RRGun) then
 		RRGun.rotating = true;
 		timer.Simple(math.random(3,5),function()
 			RRGun.rotating = false;
@@ -252,7 +252,7 @@ addLR("Precision Throwing","Farest throw wins..",
 
 if SERVER then
 	hook.Add("Think","POWOQODQIW",function()
-		if activeLR and activeLR.Name == "Russian roulette" and RRGun and ValidEntity(RRGun) and RRGun.rotating then
+		if activeLR and activeLR.Name == "Russian roulette" and RRGun and IsValid(RRGun) and RRGun.rotating then
 			RRGun:SetAngles(Angle(0,RRGun:GetAngles().y+20,90));
 		end
 	end)

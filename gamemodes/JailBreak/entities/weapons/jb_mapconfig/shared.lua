@@ -78,7 +78,7 @@ end
 function SWEP:Think()
 	if CLIENT then
 		if not self.Avalable[self:GetDTInt(1)] then return end
-		if not self.CMdl or not ValidEntity(self.CMdl) then
+		if not self.CMdl or not IsValid(self.CMdl )) then
     		self.CMdl = ClientsideModel("models/weapons/w_knife_t.mdl");
    	 	end
 
