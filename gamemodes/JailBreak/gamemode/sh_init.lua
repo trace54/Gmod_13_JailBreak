@@ -1,3 +1,4 @@
+
 JB = GM; -- rather than calling gmod.GetGamemode() 100 times;
 
 JB.Name = "JailBreak";
