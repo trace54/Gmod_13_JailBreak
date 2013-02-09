@@ -9,7 +9,7 @@
 	"author_url" "facepunch (_NewBee)"
 	
 	"description" "Fixed by Dave and Excl with help from community"
-	"selectable"	"1"
+	"selectable"	"1" //Added to make sure it is selectable in SP
     "menusystem" "1"
 	"settings"
 	{
